@@ -4,7 +4,9 @@
 ### React
 
 ```
-
+npx create-react-app app
+cd app
+npm start
 ```
 ### React Router
 
@@ -15,12 +17,14 @@ npm install react-router-dom
 ### Tailwind
 
 ```
-
+npm install -D tailwindcss
+npx tailwindcss init
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 ### Axios
 
 ```
-
+npm install axios
 ```
 
 ## Base de datos
@@ -451,7 +455,8 @@ DELIMITER ;
 
 
 ```
-
+### Total Procedimientos
+```
 mysql> SELECT ROUTINE_NAME, ROUTINE_TYPE
     -> FROM information_schema.ROUTINES
     -> WHERE ROUTINE_SCHEMA = 'Cafeteria' AND ROUTINE_TYPE = 'PROCEDURE';
@@ -468,4 +473,4 @@ mysql> SELECT ROUTINE_NAME, ROUTINE_TYPE
 | obtener_promociones | PROCEDURE    |
 +---------------------+--------------+
 8 rows in set (0.00 sec)
-
+```
